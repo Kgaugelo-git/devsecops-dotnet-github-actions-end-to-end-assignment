@@ -7,7 +7,7 @@ jobs:
     name: Run unit tests and SAST scan on the source code 
     steps:
     - uses: actions/checkout@v4
-    - uses: actions/setup-dontnet@v4
+    - uses: actions/setup-dotnet@v4
       with:
        dontnet-version : "8.0.x"
        
