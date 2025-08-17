@@ -11,8 +11,7 @@ jobs:
       with:
        dotnet-version : "8.0.x"
        
-    - name: Restore
-      run: dotnet build --no-restore -c Release
+
 
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
