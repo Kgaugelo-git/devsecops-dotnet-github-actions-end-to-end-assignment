@@ -4,14 +4,12 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Run unit tests and SAST scan on the source code 
+    name: Run unit tests and SAST scan  
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-dotnet@v4
       with:
        dotnet-version : "8.0.x"
-       
-
 
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
